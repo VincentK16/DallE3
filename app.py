@@ -12,8 +12,8 @@ def home():
 
         client = AzureOpenAI(
             api_version="2023-12-01-preview",
-            azure_endpoint="https://dalle3-demo0416.openai.azure.com/openai/deployments/Dalle3/images/generations?api-version=2023-06-01-preview",
-            api_key="890c9c0619cb40489e0a5d331da7ceef",
+            azure_endpoint="https://<replace with your dalle-3 endpoint>/openai/deployments/Dalle3/images/generations?api-version=2023-06-01-preview",
+            api_key="<Replace with your Azure OpenAI subscription key>",
         )
 
         result = client.images.generate(
