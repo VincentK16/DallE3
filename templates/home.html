@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DALL-E 3 Image Generator</title>
+</head>
+<body>
+    <form method="POST">
+        <label for="prompt">Enter a prompt:</label><br>
+        <input type="text" id="prompt" name="prompt"><br>
+        <input type="submit" value="Generate Image">
+    </form>
+
+    {% if image_url %}
+        <img src="{{ image_url }}" alt="Generated Image">
+    {% endif %}
+</body>
+</html>
